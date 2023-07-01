@@ -2,17 +2,20 @@
 
 public static class StringUtilities
 {
+	//task for 3
 	public static int ToWords(string sentence)
 	{
 		string[] words = sentence.Split(' ');
 		return words.Length;
 	}
 
+	//task for 4
 	public static string ToSentence(string sentence)
 	{
-		sentence = char.ToUpper(sentence[0]) + (sentence.ToLower()).Substring(1, sentence.Length - 1);
-		return sentence;
+		return char.ToUpper(sentence[0]) + (sentence.ToLower()).Substring(1, sentence.Length - 1);
 	}
+
+	//task for 5
 
 	public static string ToCamelCase(string sentence)
 	{
@@ -27,6 +30,7 @@ public static class StringUtilities
 		return camelCase;
 	}
 
+	//task for 5
 	public static string JoinWith(this IEnumerable<string> words, string separator)
 	{
 		return string.Join(separator, words);
